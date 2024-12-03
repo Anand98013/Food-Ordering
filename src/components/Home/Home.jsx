@@ -4,6 +4,7 @@ import MultiItemCarousel from "./MultiItemCarousel";
 import RestaurantCard from "../Resturant/RestaurantCard";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllRestaurantAction } from "../../State/Restaurant/Action";
+import Footer from "../Footer/Footer";
 
 // Array of background images for the slider
 const backgroundImages = [
@@ -31,7 +32,7 @@ const Home = () => {
   }, [dispatch, jwt]);
 
   return (
-    <div className="pb-10">
+    <div className="">
       <section
         className="banner -z-50 relative flex flex-col justify-center items-center"
         style={{
@@ -67,6 +68,10 @@ const Home = () => {
             <RestaurantCard item={item} />
           ))}
         </div>
+      </section>
+
+      <section className="pt-10 mb-0">
+        <Footer/>
       </section>
     </div>
   );

@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# Meal Mingle
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Meal Mingle is a food ordering website that allows users to explore a variety of meals, add them to their cart, and proceed with payments. The website includes a seamless payment gateway for processing payments securely.
 
-## Available Scripts
+![Meal Mingle Dashbord](./Images/home.png) 
 
-In the project directory, you can run:
 
-### `npm start`
+## Deployed Link
+[Link Text](https://mealminglefood.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **User-Friendly Interface**: Browse through a variety of food items and easily add them to the cart.
+- **Secure Payment Gateway**: Integrated payment system for easy checkout and secure payments.
+- **Responsive Design**: Optimized for desktop and mobile devices.
+- **User Authentication**: Allows users to log in and register for a personalized experience.
+- **Cart Functionality**: Add, remove, and view items in your cart.
+- **Order History**: Track your previous orders.
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**:
+  - React
+  - Material UI
+  - JavaScript/ES6
+  - CSS3/SCSS
 
-### `npm run build`
+- **Backend**:
+  - Spring Boot
+  - Spring Security
+  - MySQL (for storing user data, orders, etc.)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Payment Integration**:
+  - Stripe API or any other payment gateway
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+Make sure you have the following installed:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Node.js and npm
+- MySQL Workbench
+- Stripe (or any other payment gateway account)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/meal-mingle.git
+   cd meal-mingle
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install dependencies:
+npm install
 
-## Learn More
+3. Set up environment variables (you can create a .env file):
+MYSQL_URI=your_mysql_database_uri
+STRIPE_API_KEY=your_stripe_api_key
+PORT=your_preferred_port
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Start the development server:
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Open your browser and go to http://localhost:3000 to see the application running.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Screenshots
+Admin Page
+![Alt text](./Images/admin%20dashbord.png) 
 
-### Analyzing the Bundle Size
+Product Page
+![Alt text](./Images/top%20meal.png) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Restaurant
+![Alt text](./Images/restaurant.png) 
 
-### Making a Progressive Web App
+Cart Page
+![Alt text](./Images/cart.png) 
+![Alt text](./Images/cart1.png) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Payment Page
+![Alt text](./Images/payment.png) 
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributing
+We welcome contributions! If you would like to contribute, please fork the repository and create a pull request.

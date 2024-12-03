@@ -20,7 +20,7 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="px-5 sticky top-0 z-50 py-[.8rem] bg-[#e91e63] lg:px-20 flex justify-between">
+    <div className="px-5 sticky top-0 z-50 py-[.8rem] bg-[#d48328] lg:px-20 flex justify-between">
       <div className="lg:mr-10 cursor-pointer flex items-center space-x-4">
         <li
           onClick={() => navigate("/")}
@@ -54,7 +54,7 @@ export const Navbar = () => {
 
         <div className="">
           <IconButton onClick={() => navigate("/cart")}>
-            <Badge color="primary" badgeContent={cart.cart?.items.length}>
+            <Badge color="warning" badgeContent={cart.cart?.items.length}>
               <ShoppingCartIcon sx={{ fontSize: "1.5rem" }} />
             </Badge>
           </IconButton>
